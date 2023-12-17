@@ -1,0 +1,8 @@
+docker run -it \
+--network=host \
+--name=esphome \
+-v "/Volumes/1TB SSD/blackd1/documents/esphome":/config \
+-v /etc/localtime:/etc/localtime:ro \
+--privileged \
+--restart=unless-stopped \
+ghcr.io/esphome/esphome
